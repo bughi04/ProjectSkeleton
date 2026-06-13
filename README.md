@@ -106,4 +106,4 @@ Before hitting Run, confirm:
 - Double-check that every file is in the right subfolder (`Entities/`, `Managers/`, etc.) and that no filenames have typos.
 
 **High score not saving**
-→ This is non-fatal — the game still runs. Check that your user account has write access to `%AppData%`.
+- This is non-fatal — the game still runs. Check that your user account has write access to `%AppData%`.
