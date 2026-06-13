@@ -97,13 +97,13 @@ Before hitting Run, confirm:
 ## Troubleshooting
 
 **"SDK not found" or project won't load**
-→ Make sure you installed the **.NET 10 SDK**, not an older version. In Visual Studio installer, check that ".NET 10" is listed under Individual Components.
+- Make sure you installed the **.NET 10 SDK**, not an older version. In Visual Studio installer, check that ".NET 10" is listed under Individual Components.
 
 **Black screen or window doesn't open**
-→ Make sure your GPU drivers are up to date. The game uses hardware-accelerated SDL2 rendering.
+- Make sure your GPU drivers are up to date. The game uses hardware-accelerated SDL2 rendering.
 
 **"File not found" build errors**
-→ Double-check that every file is in the right subfolder (`Entities/`, `Managers/`, etc.) and that no filenames have typos.
+- Double-check that every file is in the right subfolder (`Entities/`, `Managers/`, etc.) and that no filenames have typos.
 
 **High score not saving**
 → This is non-fatal — the game still runs. Check that your user account has write access to `%AppData%`.
