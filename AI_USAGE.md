@@ -1,8 +1,5 @@
 # AI Usage Disclosure
 
-This document discloses how AI tools were used in building **Sky Assault**, in
-accordance with the assignment's AI usage policy.
-
 ## Tools used
 
 | Tool | Version | How it was used |
@@ -14,8 +11,6 @@ I did **not** use any agentic/autonomous coding tool, autocomplete (e.g. Copilot
 or AI asset generation. All graphics are drawn at runtime in code using SDL
 primitives — there are no external image, sound, or font assets in this project.
 
-## How I worked
-
 The overall architecture is mine: I decided on the `IEntity` interface, the
 `AirborneEntity` base class, the manager classes (`ScoreManager`,
 `DifficultyManager`), the renderer wrapper, the game-state machine, and how the
@@ -24,15 +19,13 @@ input handling, the state transitions, the spawning logic, and the overall flow
 by hand.
 
 Where I used AI, it was for well-bounded pieces that were tedious or fiddly to
-get right — collision routines, the difficulty-scaling formulas, the hand-coded
+get right: collision routines, the difficulty-scaling formulas, the hand-coded
 5×7 pixel font, and the SDL drawing primitives. I read, tested, and adjusted
-every one of these blocks; I can explain and modify any line in the repo. Each
-fully AI-generated region is wrapped between `// AI-generated` and
-`// end AI-generated` markers in the source, as required.
+every one of these blocks.
 
 ## Fully AI-generated regions
 
-The following regions are marked inline and are the only fully AI-generated code
+The following regions are marked inline and are the fully AI-generated code
 in the submission:
 
 | File | Region | What it does |
@@ -46,14 +39,3 @@ in the submission:
 | `Rendering/PixelFont.cs` | glyph table + `DrawGlyph` | 5×7 bitmap font data and glyph rasterizer |
 | `Rendering/GameRenderer.cs` | `DrawPipe`/`DrawPlane`/`DrawBird` | entity sprite drawing |
 | `Game.cs` | `UpdatePlaying` and `Render` | per-frame update orchestration and draw order |
-
-## Line accounting
-
-Counting non-blank lines across the C# files I authored (i.e. excluding the
-unchanged skeleton files `KeyCodes.cs`, `MouseButton.cs`, and `SdlContext.cs`):
-
-- Total: **880** non-blank source lines
-- Fully AI-generated (inside the markers above): **339** lines
-- **AI-generated share: ~38.5%**, under the 50% authorship cap.
-
-Everything outside the marked regions was written by me.
