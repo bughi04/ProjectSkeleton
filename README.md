@@ -20,7 +20,7 @@ Sky Assault is a Flappy Bird-style arcade game built with C# and SDL2 (via Silk.
 - Gap between pipes shrinks over time
 - Pipes and planes move faster as your score climbs
 - Planes only appear after you pass 3 pipes
-- Level bracket (LV 1–5) shown in the top-left corner
+- Level bracket (LV 1-5) shown in the top-left corner
 
 Your high score is saved automatically between runs.
 
