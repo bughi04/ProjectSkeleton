@@ -28,11 +28,11 @@ Your high score is saved automatically between runs.
 
 ## Build & run
 
-**Visual Studio 2022 (recommended):** open `TheAdventure.sln` and press **F5**. VS restores packages, compiles, and launches automatically.
+**Visual Studio 2022/2026 (recommended):** open `TheAdventure.sln` and press **F5**. VS restores packages, compiles, and launches automatically.
 
 **Terminal:** with the .NET 10 SDK installed, run `dotnet run` from the project folder.
 
-Requires the **.NET 10 SDK** (or VS 2022 with the ".NET desktop development" workload). No external assets — all graphics are drawn at runtime with SDL primitives.
+Requires the **.NET 10 SDK** (or VS 2022/2026 with the ".NET desktop development" workload). No external assets, all graphics are drawn at runtime with SDL primitives.
 
 ## Folder structure
 
@@ -69,16 +69,6 @@ SkyAssault/
     └── GameException.cs
 ```
 
-### Which files come from where
-
-| File | Source |
-|---|---|
-| `TheAdventure.sln` | Original skeleton (unchanged) |
-| `SdlContext.cs` | Original skeleton (unchanged) |
-| `KeyCodes.cs` | Original skeleton (unchanged) |
-| `MouseButton.cs` | Original skeleton (unchanged) |
-| Everything else | Written for this project (copy from artifacts) |
-
 ---
 
 ## Where your high score is saved
@@ -97,7 +87,7 @@ You can delete this file to reset your high score.
 
 Before hitting Run, confirm:
 
-- [ ] Visual Studio 2022 installed with ".NET desktop development" workload **OR** .NET 10 SDK installed
+- [ ] Visual Studio 2022/2026 installed with ".NET desktop development" workload **OR** .NET 10 SDK installed
 - [ ] All files are in the correct folders (see structure above)
 - [ ] `TheAdventure.csproj` is the updated version (should contain `TreatWarningsAsErrors`)
 - [ ] You opened `TheAdventure.sln` (not just a single `.cs` file)
