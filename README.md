@@ -1,6 +1,6 @@
-# Sky Assault 🐦✈️
+# Sky Assault
 
-A Flappy Bird-style game where enemy planes fly through the pipe gaps trying to take you down. Dodge the columns, avoid the planes, survive as long as you can.
+Sky Assault is a Flappy Bird-style arcade game built with C# and SDL2 (via Silk.NET). You control a bird that flaps against gravity to weave through scrolling pipe gaps while enemy planes fly across those same gaps to take you down. Difficulty scales with your score: gaps shrink, everything speeds up, and planes unlock after the third pipe. Your high score persists to disk between runs.
 
 ---
 
