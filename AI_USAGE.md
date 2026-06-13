@@ -9,7 +9,7 @@
 
 I did **not** use any agentic/autonomous coding tool, autocomplete (e.g. Copilot),
 or AI asset generation. All graphics are drawn at runtime in code using SDL
-primitives — there are no external image, sound, or font assets in this project.
+primitives, there are no external image, sound, or font assets in this project.
 
 The overall architecture is mine: I decided on the `IEntity` interface, the
 `AirborneEntity` base class, the manager classes (`ScoreManager`,
