@@ -28,11 +28,11 @@ Your high score is saved automatically between runs.
 
 ## Build & run
 
+Requires the **.NET 10 SDK** (or VS 2022/2026 with the ".NET desktop development" workload). No external assets, all graphics are drawn at runtime with SDL primitives.
+
 **Visual Studio 2022/2026 (recommended):** open `TheAdventure.sln` and press **F5**. VS restores packages, compiles, and launches automatically.
 
 **Terminal:** with the .NET 10 SDK installed, run `dotnet run` from the project folder.
-
-Requires the **.NET 10 SDK** (or VS 2022/2026 with the ".NET desktop development" workload). No external assets, all graphics are drawn at runtime with SDL primitives.
 
 ## Folder structure
 
