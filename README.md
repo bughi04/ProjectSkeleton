@@ -26,46 +26,13 @@ Your high score is saved automatically between runs.
 
 ---
 
-## No-terminal option — Visual Studio 2022 (Recommended)
+## Build & run
 
-This is the easiest way to run the game with zero terminal usage.
+**Visual Studio 2022 (recommended):** open `TheAdventure.sln` and press **F5**. VS restores packages, compiles, and launches automatically.
 
-1. Download **Visual Studio 2022 Community** (free):
-   👉 https://visualstudio.microsoft.com/vs/community/
+**Terminal:** with the .NET 10 SDK installed, run `dotnet run` from the project folder.
 
-2. During installation, tick **".NET desktop development"** workload
-
-3. Open Visual Studio → `File → Open → Project/Solution`
-
-4. Navigate to your `SkyAssault` folder and open `TheAdventure.sln`
-
-5. Press **F5** (or the green ▶ Run button at the top)
-
-That's it — Visual Studio handles restoring packages, compiling, and launching the game automatically.
-
-> **VS Code** also works if you prefer a lighter editor.
-> Install it from https://code.visualstudio.com/ then add the
-> **"C# Dev Kit"** extension. Open the SkyAssault folder, then
-> press F5.
-
----
-
-## Terminal option (if you prefer)
-
-If you do want to use a terminal:
-
-1. Install the **.NET 10 SDK**:
-   👉 https://dotnet.microsoft.com/download/dotnet/10.0
-   *(Pick the SDK installer — not just the Runtime)*
-
-2. Open Terminal / Command Prompt / PowerShell inside your `SkyAssault` folder
-
-3. Run:
-   ```
-   dotnet run
-   ```
-
----
+Requires the **.NET 10 SDK** (or VS 2022 with the ".NET desktop development" workload). No external assets — all graphics are drawn at runtime with SDL primitives.
 
 ## Folder structure
 
